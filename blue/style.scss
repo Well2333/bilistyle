@@ -307,3 +307,48 @@ body {
     }
   }
 }
+// 动态
+.dynamic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  padding-top: $base-spacing;
+  padding-bottom: 312px;
+  background-color: #fff;
+
+  .gallery {
+    padding: 0px $base-spacing;
+    display: grid;
+    gap: $base-spacing/3;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    //grid-auto-rows: minmax(324px, 1fr);
+
+    .image {
+      position: relative;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .portal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 312px;
+    background: url("./assets/dynamic_bottom.png");
+
+    .qr-code {
+      position: absolute;
+      top: 94px;
+      left: 867px;
+      width: 140px;
+      height: 140px;
+      background-color: #000;
+    }
+  }
+}
