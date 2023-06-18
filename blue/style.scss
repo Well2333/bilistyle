@@ -253,6 +253,33 @@ body {
     }
   }
 }
+// 专栏
+.column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  padding-top: $base-spacing;
+  padding-bottom: 312px;
+  background-color: #fff;
+
+  .portal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 312px;
+    background: url("./assets/column_bottom.png");
+
+    .qr-code {
+      position: absolute;
+      top: 86px;
+      left: 645px;
+      width: 140px;
+      height: 140px;
+      background-color: #000;
+    }
+  }
+}
 // 番剧
 .bangumi {
   position: relative;
