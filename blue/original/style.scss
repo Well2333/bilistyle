@@ -129,7 +129,7 @@ body {
     }
 
     .data {
-      >span {
+      > span {
         font-size: 36px;
         color: #999;
         margin-right: calc($base-spacing / 4);
@@ -162,7 +162,7 @@ body {
     justify-content: space-between;
     margin-top: 24px;
 
-    >span {
+    > span {
       font-size: 36px;
       color: #999;
     }
@@ -201,7 +201,7 @@ body {
     color: #000;
     text-align: center;
 
-    >span::before {
+    > span::before {
       display: block;
       font-family: "van";
       font-size: 72px;
@@ -354,7 +354,7 @@ body {
 
     padding: 0px $base-spacing;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: $img-gap;
@@ -374,7 +374,7 @@ body {
 
     &.col-2 {
       img {
-        width: calc((100% - $img-gap ) / 2);
+        width: calc((100% - $img-gap) / 2);
         aspect-ratio: 1;
         object-fit: cover;
       }
@@ -382,10 +382,9 @@ body {
 
     &.col-3 {
       img {
-        width: calc((100% - $img-gap*2) / 3);
+        width: calc((100% - $img-gap * 2) / 3);
         aspect-ratio: 1;
         object-fit: cover;
-        overflow: hidden;
       }
     }
   }
